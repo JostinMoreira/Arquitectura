@@ -32,7 +32,7 @@ jobs:
         run: npm run test:coverage || true
 
       - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@v2.1.1
+        uses: SonarSource/sonarcloud-github-action@595b73b88b3e5b03e5ca5e5d0644c3cbfecb8c90
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
